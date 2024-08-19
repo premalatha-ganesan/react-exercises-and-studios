@@ -1,10 +1,13 @@
 .movieText {
-   color: red;
+   color: green;
    text-align: left;
    font-size: large;
-}
-
-.movieHeading {
-   color: blue;
+   background-color: aqua;
+ }
+ 
+ 
+ .movieHeading {
+   color: red;
    text-align: left;
-}
+ }
+ 

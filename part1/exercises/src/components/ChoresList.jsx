@@ -1,14 +1,17 @@
 import React from 'react';
-import './ChoresList.Module.css';
+import classes from './ChoresList.module.css';
+
+
 export default function ChoresList () {
-   return (
-   <div>
-      <h3 className ="choresHeading"> Chores List</h3>
-      <ol className ="choresText">
-         <li>Laundry</li>
-         <li>vacuum</li>
-      </ol>
-      </div>
-   )
-   
+
+
+  return (
+     <div>
+        <h2 className = {classes.choresHeading}> Today's chores</h2>
+        <ul>
+           <li className = {classes.choresText}> Laundry </li>
+           <li className = {classes.choresText}> Do the dishes</li>
+        </ul>
+     </div>
+  )
 }
