@@ -7,11 +7,12 @@ import BookList from './components/BookList.jsx';
 function App() {
   return (
     <div className="App">
-       <ChoresList />
-       <MovieList />
-       <BookList />
-       <HobbyLinks />
-     </div>
+
+        <MovieList />
+        <ChoresList />
+        <HobbyLinks />
+      </div>
+   
   
  );
 
