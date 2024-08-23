@@ -1,8 +1,19 @@
 let stars = ["⭐", "⭐ ⭐", "⭐ ⭐ ⭐", "⭐ ⭐ ⭐ ⭐", "⭐ ⭐ ⭐ ⭐ ⭐"];
+import recipe from "./recipe.json";
 
-function RateARecipe() {
-  return stars;
+function RateARecipe({rating}) {
+  return (
+    <div>
+      {rating >= 1 && rating <= 5 ? <GiveRating rating={rating} /> : null}
+    </div>
+  );
+  
+  function GiveRating({rating}) {
+    console.log(stars[rating - 1]); // Logging the star string
+    return (<h3>{stars[rating - 1]}</h3>);
+  }
 }
+
 
 export default RateARecipe;
 
