@@ -1,5 +1,5 @@
 import data from '../data.json';
-import { useState } from 'react';
+import {useState} from 'react';
 
 export default function MyProjects() {
    const [index, setIndex] = useState(0);
@@ -19,6 +19,7 @@ export default function MyProjects() {
   let project = projects[index];
 
   return (
+    <>
     <div>
       <button onClick={handleClick}>
         Next
@@ -27,5 +28,7 @@ export default function MyProjects() {
       </h2>
       <img src={project.photoUrl} alt={project.alt} />
     </div>
+    </>
+    
   );
 }
