@@ -1,13 +1,13 @@
-import { useState } from 'react';
+//import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.gordonramsay.com/gr/recipes/";
+   let authorPhoto = "https://upload.wikimedia.org/wikipedia/commons/6/6f/Gordon_Ramsay.jpg";
+   let authorName = "Gordon Ramsay";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} width = "150 px" height = "300 px" alt = "Gordan Ramsay" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}></a> 
@@ -17,7 +17,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["Pork Loin", "Cheese", "Olive oil" , "Salt" , "Pepper"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -49,7 +49,8 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://www.gordonramsay.com/assets/Uploads/_resampled/CroppedFocusedImage192072050-50-Stuffed-pork-1305.jpg" 
+      alt="Pork Loin" width="300 px" height = "200 px" className="imageUpdates"/>
    );
 }
 
